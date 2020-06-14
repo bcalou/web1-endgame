@@ -1,10 +1,12 @@
 <template>
-  <div class="container quizz">
-    <p class="quizz__question">{{ question }}</p>
-    <button id="resA" class="quizz__response">{{ responseA }}</button>
-    <button id="resB" class="quizz__response">{{ responseB }}</button>
-    <button id="resC" class="quizz__response">{{ responseC }}</button>
-    <button id="resD" class="quizz__response">{{ responseD }}</button>
+  <div class="containe__container">
+    <div class="container quizz">
+      <p class="quizz__question">{{ question }}</p>
+      <button id="resA" class="quizz__response">{{ responseA }}</button>
+      <button id="resB" class="quizz__response">{{ responseB }}</button>
+      <button id="resC" class="quizz__response">{{ responseC }}</button>
+      <button id="resD" class="quizz__response">{{ responseD }}</button>
+    </div>
   </div>
 </template>
 
@@ -34,7 +36,10 @@ export default {
     height: 475px;
   }
 }
-
+.container {
+  background: $backgroundBoxes;
+  
+}
 .quizz {
   &__question {
     margin: 24px 0 16px 0;
@@ -44,6 +49,8 @@ export default {
     font-weight: 600;
     line-height: 1.5;
     color: $yellow;
+   
+
 
     @include tablet-up {
       font-size: rem(24px);
