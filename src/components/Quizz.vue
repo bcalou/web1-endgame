@@ -23,6 +23,7 @@ export default {
 
 <style scoped lang="scss">
 .container {
+  
   //margin: 0 auto;
   width: 80vw;
   height: 350px;
